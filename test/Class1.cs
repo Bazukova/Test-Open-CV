@@ -19,7 +19,7 @@ namespace ClassLibrary2Z
                 return false;
             if (!password.Any(Char.IsLower))
                 return false;
-            if (password.Intersect("#$%^&_)").Count() == 0)
+            if (password.Intersect("!#$%^&_)").Count() == 0)
                 return false;
             return true;
         }

@@ -97,7 +97,7 @@ namespace ClassLibrary2Z.Tests
         public void Check_Lowercase_ReturnsTrue()
         {
             // Arrange
-            string password = "mmm9gfj#";
+            string password = "Mmm9gfj#";
             bool expected = true;
             // Act
             bool actual = PasswordChecker.validatePassword(password);

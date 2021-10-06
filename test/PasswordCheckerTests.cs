@@ -15,12 +15,12 @@ namespace ClassLibrary2Z.Tests
         [TestMethod()]
         public void Check_8Symbols_ReturnsTrue()
         {
-            // Arrange
+            // Arrange - устанавливает начальные условия для выполнения теста
             string password = "WSDllf582$";
             bool expected = true;
-            // Act
+            // Act - выполняем сам тест
             bool actual = PasswordChecker.validatePassword(password);
-            // Assert
+            // Assert - верифицирует результат теста, и, в данном случае, оформление-повышает читаемость текста и облегчает его использование в качестве документации к текстируемой функциональности
             Assert.AreEqual(expected,actual);
         }
         [TestMethod()]

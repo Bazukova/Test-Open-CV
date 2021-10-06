@@ -16,12 +16,18 @@ namespace ClassLibrary2Z.Tests
         public void Check_8Symbols_ReturnsTrue()
         {
             // Arrange - устанавливает начальные условия для выполнения теста
+            // Объявляем переменную для установки пароля из тестовых данных
+            // Объявляем ожидаемое значение в результате выполнения теста
+            // берем из тестовых данных
             string password = "WSDllf582$";
-            bool expected = true;
+            bool expected = true; 
             // Act - выполняем сам тест
-            bool actual = PasswordChecker.validatePassword(password);
+            // В блоке Act создаем переменную, которая вернет актуальный результат при выполнении метода 
+            // CheckPassword. В нашем случае ValidatePassword
+            bool actual = PasswordChecker.validatePassword(password); 
             // Assert - верифицирует результат теста, и, в данном случае, оформление-повышает читаемость текста и облегчает его использование в качестве документации к текстируемой функциональности
-            Assert.AreEqual(expected,actual);
+            // С помощью класса Assert сравниваем два значения ожидаемое и реальное, метод AreEquel, и в качестве аргумента-наши данные
+            Assert.AreEqual(expected,actual); 
         }
         [TestMethod()]
         public void Check_20Symbols_ReturnsFalse()

@@ -10,7 +10,7 @@
 using namespace cv;
 using namespace std;
 
-Mat img; // создание изображение
+Mat img; // создание матрицу
 
 int main()
 {

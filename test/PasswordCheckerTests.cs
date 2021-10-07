@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary2Z.Tests
 {
-    [TestClass()]
+    [TestClass()] // обозначает класс, содержащий модульные тесты
     public class PasswordCheckerTests
     {
         
-        [TestMethod()]
+        [TestMethod()] // обозначает, что далее идёт метод, содержащий модульный (unit) тест
         public void Check_8Symbols_ReturnsTrue()
         {
             // Arrange - устанавливает начальные условия для выполнения теста

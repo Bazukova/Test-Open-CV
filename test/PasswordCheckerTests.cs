@@ -23,7 +23,7 @@ namespace ClassLibrary2Z.Tests
             bool expected = true; 
             // Act - выполняем сам тест
             // В блоке Act создаем переменную, которая вернет актуальный результат при выполнении метода 
-            // CheckPassword. В нашем случае ValidatePassword
+            // CheckPassword. В этом случае ValidatePassword
             bool actual = PasswordChecker.validatePassword(password); 
             // Assert - верифицирует результат теста, и, в данном случае, оформление-повышает читаемость текста и облегчает его использование в качестве документации к текстируемой функциональности
             // С помощью класса Assert сравниваем два значения ожидаемое и реальное, метод AreEquel, и в качестве аргумента-наши данные
